@@ -1,0 +1,25 @@
+From 922319e7c285465d7b5fc5c92d88153db0c46979 Mon Sep 17 00:00:00 2001
+From: Tim Schumacher <timschumi@gmx.de>
+Date: Fri, 7 Feb 2020 07:31:29 +0100
+Subject: [PATCH] Disable CSMT by default
+
+---
+ dlls/wined3d/wined3d_main.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/dlls/wined3d/wined3d_main.c b/dlls/wined3d/wined3d_main.c
+index 5d60a44ef6..fe2867140f 100644
+--- a/dlls/wined3d/wined3d_main.c
++++ b/dlls/wined3d/wined3d_main.c
+@@ -100,7 +100,7 @@ static CRITICAL_SECTION wined3d_wndproc_cs = {&wined3d_wndproc_cs_debug, -1, 0,
+  * where appropriate. */
+ struct wined3d_settings wined3d_settings =
+ {
+-    TRUE,           /* Multithreaded CS by default. */
++    FALSE,          /* Multithreaded CS by default. */
+     MAKEDWORD_VERSION(4, 4), /* Default to OpenGL 4.4 */
+     ORM_FBO,        /* Use FBOs to do offscreen rendering */
+     PCI_VENDOR_NONE,/* PCI Vendor ID */
+-- 
+2.25.0
+
