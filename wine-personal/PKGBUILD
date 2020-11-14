@@ -6,7 +6,7 @@
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=wine-personal
-pkgver=5.19
+pkgver=5.21
 pkgrel=1
 
 _pkgbasever=${pkgver/rc/-rc}
@@ -17,9 +17,9 @@ source=(https://dl.winehq.org/wine/source/5.x/wine-$_pkgbasever.tar.xz{,.sign}
         wine-binfmt.conf
         0001-Disable-CSMT-by-default.patch
         0002-Link-ScriptGetCMap-to-gdi32.patch)
-sha512sums=('b91eb1cb1225ac8abe26f5c5dd74fb376e6489b460035c70e6c7890595086e99273497741b6a736ef4884ae7bacc44482d2e3e8ba7e8d85c78c571bd4b133d8a'
+sha512sums=('0879e4edeca60880799736ac831f8ae28c6e5156dde161685aa84a5d8bd20c4f3a51a178fa2b130a9e8af44432bb239160a04829fcef5d8332e2bbf829d2bc18'
             'SKIP'
-            '4335ce48437641bbfd8b882cc92cd2970493586f4ac6501ffb94a0f2dcd38ec632d6afabf71d2c1ab1806a5cf594c2988f94a86c508fcd24a7d42078c662add9'
+            '079a7fccd66d886b3498c45057b1bb215d3897e44e0c8d6afb56174fad583e8a578ea888d70d62a18da1566bb9649fdefd08227efecd21fc71b0b3d739dab636'
             '6e54ece7ec7022b3c9d94ad64bdf1017338da16c618966e8baf398e6f18f80f7b0576edf1d1da47ed77b96d577e4cbb2bb0156b0b11c183a0accf22654b0a2bb'
             'bdde7ae015d8a98ba55e84b86dc05aca1d4f8de85be7e4bd6187054bfe4ac83b5a20538945b63fb073caab78022141e9545685e4e3698c97ff173cf30859e285'
             'cc13cc0a5ab5557a0ef678ca8462df2ff23eba5da37bd5d1616d0dca8097bd807b44d001699d7cb533028cb2a09b16f5e5db2e4ab6195e6d121d2276b9e13ed9'
